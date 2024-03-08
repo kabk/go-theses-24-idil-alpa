@@ -568,7 +568,6 @@ h2 {
     font-size: 1.6rem;
     line-height: 1.7rem;
     padding: 0 0.6rem 0 0.6rem;
-    color: red;
   }
 
   h1 {
@@ -580,6 +579,7 @@ h2 {
 
   sup {
     font-size: 0.65rem;
+    color: red;
   }
 
   .background {
