@@ -1,0 +1,635 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/duvaryeni.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 50%;
+  /* filter: blur(0.4rem); */
+
+  z-index: -100;
+  position: fixed;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  /* margin: 5rem; */
+  background-attachment: fixed;
+  background-color: #3d3932;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(images/duvaryeni.jpg);
+  background-size: 50%;
+  /* scale: .2; */
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: auto;
+  height: 100%;
+  width: 100%;
+  row-gap: 3rem;
+  column-gap: 1rem;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+.grid-item {
+  color: #ffffff;
+  padding: 0 0 0 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 200;
+  line-height: 1rem;
+  break-after: auto;
+    word-break: break-word;
+}
+
+.grid-image {
+  width: 100%;
+  display: grid;
+}
+
+img:hover{
+  mix-blend-mode: darken;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+figure {
+  margin: 0;
+  box-sizing: border-box;
+  mix-blend-mode: screen;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-family: "Fraunces";
+  font-size: 1.12rem;
+  line-height: 1.25;
+  font-weight: 400;
+  mix-blend-mode: difference;
+  margin: 0;
+  padding-bottom: 2rem;
+  hyphens: auto;
+  margin-block-start: -0.4rem;
+}
+
+sup {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+figcaption {
+  color: rgb(255, 255, 255);
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.35rem;
+  font-weight: lighter;
+  mix-blend-mode: color-dodge;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 7rem;
+  font-size: 7rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  display: grid;
+  margin: 0;
+  margin-block-start: -0.1em;
+  margin-block-end: 0.67em;
+  align-items: start;
+  word-break: break-all;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 3.2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  display: grid;
+  margin: 0;
+  align-items: start;
+}
+
+
+#grid-header-1 {
+  grid-area: 1/1/1/5;
+  
+}
+
+#grid-header-1-1 {
+  grid-area: 1/5/1/13;
+}
+
+#grid-item-1 {
+  grid-area: 2/5/3/13;
+}
+
+#grid-footer-1 {
+  grid-area: 2/1/2/5;
+}
+
+#grid-header-2 {
+  grid-area: 3/1/4/5;
+}
+
+#grid-header-2-1 {
+  grid-area: 3/5/4/13;
+}
+
+#grid-footer-2 {
+  grid-area: 4/1/5/5;
+}
+
+#grid-item-2 {
+  grid-area: 4/5/4/13;
+}
+
+#grid-item-3 {
+  grid-area: 4/13/5/17;
+  align-items: center;
+}
+
+#grid-header-3 {
+  grid-area: 5/1/6/5;
+}
+#grid-header-3-1 {
+  grid-area: 5/5/6/13;
+}
+
+#grid-footer-3 {
+  grid-area: 6/1/8/5;
+}
+
+#grid-item-4 {
+  grid-area: 6/5/7/13;
+}
+#grid-item-5 {
+      grid-area: 6 / 1 / 8 / 5;
+    align-items: end;
+}
+#grid-item-5-1 {
+  grid-area: 6/13/7/18;
+  align-items: start;
+}
+#grid-header-4 {
+  grid-area: 8/1/9/5;
+}
+#grid-header-4-1 {
+  grid-area: 8/5/9/13;
+}
+#grid-footer-4 {
+  grid-area: 9/1/11/5;
+}
+#grid-item-6 {
+  grid-area: 10/5/11/13;
+}
+#grid-item-7 {
+  grid-area: 9/5/10/13;
+}
+#grid-header-5 {
+  grid-area: 11/1/12/5;
+}
+#grid-header-5-1 {
+  grid-area: 11/5/12/13;
+}
+#grid-footer-5 {
+  grid-area: 12/1/13/5;
+}
+#grid-item-8 {
+  grid-area: 12/5/13/13;
+}
+#grid-item-9 {
+  grid-area: 12/13/13/17;
+  align-items: end;
+}
+#grid-header-6 {
+  grid-area: 13/1/14/5;
+}
+#grid-header-6-1 {
+  grid-area: 13/5/14/13;
+}
+#grid-footer-6 {
+  grid-area: 14/1/15/5;
+}
+#grid-item-10 {
+  grid-area: 14/5/15/13;
+}
+#grid-header-7 {
+  grid-area: 15/1/16/5;
+}
+#grid-header-7-1 {
+  grid-area: 15/5/16/13;
+}
+#grid-footer-7 {
+  grid-area: 16/1/17/5;
+}
+#grid-item-11 {
+  grid-area: 16/5/17/13;
+}
+#grid-header-8 {
+  grid-area: 17/1/18/5;
+}
+#grid-header-8-1 {
+  grid-area: 17/5/18/13;
+}
+#grid-footer-8 {
+  grid-area: 18/1/19/5;
+}
+#grid-item-12 {
+  grid-area: 18/5/19/13;
+}
+#grid-item-12-1 {
+  grid-area: 20/5/21/13;
+}
+#grid-item-12-2 {
+  grid-area: 22/5/23/13;
+}
+#grid-item-13 {
+  grid-area: 22/1/23/5;
+  align-items: center;
+}
+#grid-item-13-1 {
+  grid-area: 22/13/23/17;
+  align-items: end;
+}
+#grid-item-13-2 {
+  grid-area: 24/5/23/13;
+}
+#grid-header-9 {
+  grid-area: 19/1/20/5;
+}
+#grid-header-9-1 {
+  grid-area: 19/5/20/13;
+}
+#grid-footer-9 {
+  grid-area: 20/1/21/5;
+}
+#grid-item-14 {
+  grid-area: 25/5/26/13;
+}
+#grid-item-14-1 {
+  grid-area: 24/5/25/13;
+}
+#grid-item-15 {
+  grid-area: 25/13/26/17;
+  align-items: start;
+}
+#grid-item-15-1 {
+  grid-area: 25/1/25/5;
+  align-items: end;
+}
+#grid-header-10 {
+  grid-area: 21/1/22/5;
+}
+#grid-header-10-1 {
+  grid-area: 21/5/22/13;
+}
+#grid-footer-10 {
+  grid-area: 22/1/23/5;
+}
+#grid-item-16 {
+  grid-area: 27/5/28/13;
+}
+#grid-item-16-1 {
+  grid-area: 29/5/30/13;
+}
+#grid-item-17 {
+  grid-area: 30/5/31/13;
+}
+#grid-header-11 {
+  grid-area: 24/1/25/5;
+}
+#grid-header-11-1 {
+  grid-area: 24/5/25/13;
+}
+#grid-footer-11 {
+  grid-area: 25/1/36/5;
+}
+#grid-item-18 {
+  grid-area: 31/5/32/13;
+}
+#grid-header-12 {
+  grid-area: 26/1/27/5;
+}
+#grid-header-12-1 {
+  grid-area: 26/5/27/13;
+}
+#grid-footer-12 {
+  grid-area: 27/1/28/5;
+}
+#grid-item-19 {
+  grid-area: 33/5/34/13;
+}
+#grid-item-20 {
+  grid-area: 33/1/33/5;
+  align-items: center;
+}
+#grid-item-21 {
+  grid-area: 33/13/34/17;
+  align-items: start;
+}
+#grid-item-22 {
+  grid-area: 34/5/35/12;
+}
+#grid-header-13 {
+  grid-area: 28/1/29/5;
+}
+#grid-header-13-1 {
+  grid-area: 28/5/29/13;
+}
+#grid-footer-13 {
+  grid-area: 29/1/30/5;
+}
+#grid-item-26 {
+  grid-area: 35/5/36/13;
+}
+#grid-item-27 {
+  grid-area: 35/13/36/17;
+}
+#grid-item-28 {
+  grid-area: 38/5/39/13;
+}
+#grid-header-14 {
+  grid-area: 32/1/33/5;
+}
+#grid-header-14-1 {
+  grid-area: 32/5/33/13;
+}
+#grid-footer-14 {
+  grid-area: 33/1/34/5;
+}
+#grid-item-29 {
+  grid-area: 37/5/38/13;
+}
+#grid-header-15 {
+  grid-area: 34/1/35/5;
+}
+#grid-header-15-1 {
+  grid-area: 34/5/35/13;
+}
+#grid-footer-15 {
+  grid-area: 35/1/36/5;
+}
+#grid-item-30 {
+  grid-area: 43/5/44/13;
+}
+#grid-header-16 {
+  grid-area: 36/1/37/5;
+}
+#grid-header-16-1 {
+  grid-area: 36/5/37/13;
+}
+#grid-footer-16 {
+  grid-area: 37/1/38/5;
+}
+#grid-item-31 {
+  grid-area: 45/5/46/13;
+}
+#grid-item-32 {
+display: none;
+}
+
+@media (max-width: 930px) {
+  .grid-layout {
+    display: block;
+    box-sizing: border-box;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%; 
+    height: 100%; 
+  }
+  
+  .grid-item {
+  color: #ffffff;
+  padding: 0 0.6rem 0 0.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 200;
+  line-height: 1rem;
+  break-after: auto;
+  word-break: break-word;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  }
+
+  ol{
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    margin: 1rem;
+    font-size: .9rem;
+  }
+
+  p{
+    font-size: 1.32rem;
+    line-height: 1.32;
+    word-spacing: -0.07rem;
+  }
+
+
+  h2{
+    font-size: 2.8rem;
+    line-height: 3rem;
+    
+  }
+
+  h1{
+    font-size: 6rem;
+    line-height: 6rem;
+    padding: 0 0.6rem 0 0.6rem;
+  }
+
+
+  #grid-footer-1 {
+    display: none;
+  }
+  #grid-footer-2 {
+    display: none;
+  }
+  #grid-footer-3 {
+    display: none;
+  }
+  #grid-footer-4 {
+    display: none;
+  }
+  #grid-footer-5 {
+    display: none;
+  }
+  #grid-footer-6 {
+    display: none;
+  }
+  #grid-footer-7 {
+    display: none;
+  }
+  #grid-footer-8 {
+    display: none;
+  }
+  #grid-footer-9 {
+    display: none;
+  }
+  #grid-footer-10 {
+    display: none;
+  }
+  #grid-footer-11 {
+    display: none;
+  }
+  #grid-footer-12{
+    display: none;
+  }
+  #grid-footer-13 {
+    display: none;
+  }
+  #grid-footer-14 {
+    display: none;
+  }
+  #grid-footer-15 {
+    display: none;
+  }
+  #grid-footer-16 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-layout {
+    display: block;
+    box-sizing: border-box;
+    padding: .5rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%; 
+    height: 100%; 
+  }
+  
+  .grid-item {
+  color: #ffffff;
+  padding: 0 0.6rem 0 0.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 200;
+  line-height: 1rem;
+  break-after: auto;
+  word-break: break-word;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  }
+
+  ol{
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    margin: .5rem;
+    font-size: .5rem;
+  }
+
+  p{
+    font-size: 0.9rem;
+    line-height: 1.2;
+    word-spacing: 0;
+    font-weight: 200;
+  }
+
+
+  h2{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+
+  h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 0 0.6rem 0 0.6rem;
+  }
+
+  sup {
+    font-size: .65rem;
+  }
+
+  .background {
+  background-repeat: no-repeat;
+}
+
+
+  #grid-footer-1 {
+    display: none;
+  }
+  #grid-footer-2 {
+    display: none;
+  }
+  #grid-footer-3 {
+    display: none;
+  }
+  #grid-footer-4 {
+    display: none;
+  }
+  #grid-footer-5 {
+    display: none;
+  }
+  #grid-footer-6 {
+    display: none;
+  }
+  #grid-footer-7 {
+    display: none;
+  }
+  #grid-footer-8 {
+    display: none;
+  }
+  #grid-footer-9 {
+    display: none;
+  }
+  #grid-footer-10 {
+    display: none;
+  }
+  #grid-footer-11 {
+    display: none;
+  }
+  #grid-footer-12{
+    display: none;
+  }
+  #grid-footer-13 {
+    display: none;
+  }
+  #grid-footer-14 {
+    display: none;
+  }
+  #grid-footer-15 {
+    display: none;
+  }
+  #grid-footer-16 {
+    display: none;
+  }
+
+}
