@@ -515,6 +515,9 @@ h2 {
   #grid-footer-16 {
     display: none;
   }
+  #grid-item-32 {
+  display: block;
+  }
 }
 
 @media (max-width: 600px) {
@@ -557,7 +560,7 @@ h2 {
     font-size: 1.2rem;
     line-height: 1.4;
     word-spacing: 0;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0 0.6rem 0 0.6rem;
   }
 
@@ -634,5 +637,8 @@ h2 {
   }
   #grid-footer-16 {
     display: none;
+  }
+  #grid-item-32 {
+  display: block;
   }
 }
