@@ -557,24 +557,25 @@ h2 {
   }
 
   p {
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: normal;
     word-spacing: 0;
     font-weight: 500;
     padding: 0 0.6rem 0 0.6rem;
   }
 
   h2 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
     padding: 0 0.6rem 0 0.6rem;
+    color: red;
   }
 
   h1 {
     font-size: 4rem;
     line-height: 4rem;
+    font-weight: 200;
     padding: 0 0.6rem 0 0.6rem;
-    color: red;
   }
 
   sup {
@@ -583,7 +584,7 @@ h2 {
 
   .background {
     width: 100vw;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     position: fixed;
   }
 
