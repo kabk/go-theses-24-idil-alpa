@@ -516,7 +516,7 @@ h2 {
     display: none;
   }
   #grid-item-32 {
-  display: block;
+    display: block;
   }
 }
 
@@ -568,6 +568,7 @@ h2 {
     font-size: 1.5rem;
     line-height: 1.8rem;
     padding: 0 0.6rem 0 0.6rem;
+    color: aqua;
   }
 
   h1 {
@@ -582,7 +583,7 @@ h2 {
 
   .background {
     width: 100vw;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     position: fixed;
   }
 
@@ -639,6 +640,6 @@ h2 {
     display: none;
   }
   #grid-item-32 {
-  display: block;
+    display: block;
   }
 }
