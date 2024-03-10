@@ -548,17 +548,17 @@ h2 {
 
   .grid-image {
     box-sizing: border-box;
-    padding: 0rem 0.35rem;
+    padding: 0 0.35rem 0 0.35rem;
   }
 
   ol {
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
   }
 
   li {
-    margin: 0.35rem;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 0.88rem;
   }
 
   p {
@@ -585,11 +585,11 @@ h2 {
 
   sup {
     font-size: 0.65rem;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   figcaption {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .background {
