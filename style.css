@@ -553,12 +553,12 @@ h2 {
 
   ol {
     box-sizing: border-box;
-    padding: 0;
   }
 
   li {
     font-size: 0.75rem;
     line-height: 0.88rem;
+    margin: 1.2rem;
   }
 
   p {
