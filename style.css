@@ -552,7 +552,7 @@ h2 {
   }
 
   li {
-    margin: 0.5rem;
+    margin: 0.35rem;
     font-size: 0.5rem;
   }
 
@@ -567,7 +567,7 @@ h2 {
   h2 {
     font-size: 1.6rem;
     line-height: 1.7rem;
-    padding: 0 0.6rem 0 0.6rem;
+    padding: 0 0.35rem 0 0.35rem;
     color: red;
   }
 
@@ -575,7 +575,7 @@ h2 {
     font-size: 4rem;
     line-height: 4rem;
     font-weight: 200;
-    padding: 0 0.6rem 0 0.6rem;
+    padding: 0 0.35rem 0 0.35rem;
   }
 
   sup {
@@ -590,6 +590,10 @@ h2 {
 
   body {
     height: 100vh;
+  }
+
+  figure {
+    padding: 0 0.35rem 0 0.35rem;
   }
 
   #grid-footer-1 {
