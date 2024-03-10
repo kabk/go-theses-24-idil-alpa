@@ -595,6 +595,7 @@ h2 {
 
   .background {
     width: 100vw;
+    height: 100vh;
     background-repeat: repeat;
     position: fixed;
   }
