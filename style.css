@@ -75,6 +75,8 @@ body {
 .grid-image {
   width: 100%;
   display: grid;
+  box-sizing: border-box;
+  padding: 0px 0.6rem;
 }
 
 figure:hover {
@@ -436,10 +438,31 @@ h2 {
 }
 
 @media (max-width: 930px) {
+  #title {
+    text-align: center;
+    background-color: #1f1f1f;
+    position: fixed;
+    display: block;
+    height: 6rem;
+    width: 100vw;
+    box-sizing: border-box;
+    z-index: 1000;
+    padding: 4.5vw 0.292vw 0 0.292vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 4.7vw;
+    line-height: 2.1rem;
+    color: #ffffff;
+    font-weight: 300;
+    mix-blend-mode: darken;
+  }
+
   .grid-layout {
     display: block;
     box-sizing: border-box;
     padding: 1rem;
+    padding-top: 9rem;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
@@ -487,6 +510,10 @@ h2 {
     font-size: 6rem;
     line-height: 6rem;
     padding: 0 0.6rem 0 0.6rem;
+  }
+
+  figure:hover {
+    mix-blend-mode: screen;
   }
 
   #grid-footer-1 {
