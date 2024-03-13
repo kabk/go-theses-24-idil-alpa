@@ -694,6 +694,10 @@ h2 {
     mix-blend-mode: screen;
   }
 
+  .footnotereverse {
+    scroll-margin-top: 10vh;
+  }
+
   #grid-footer-1 {
     display: none;
   }
